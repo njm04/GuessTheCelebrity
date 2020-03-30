@@ -23,7 +23,6 @@ public class LoadImage extends AsyncTask<String, Void, Bitmap> {
         Bitmap bitmap = null;
         try {
             String url = strings[0];
-            System.out.println("url: " + url);
             InputStream inputStream = new URL(url).openStream();
             bitmap = BitmapFactory.decodeStream(inputStream);
         } catch (IOException e) {
