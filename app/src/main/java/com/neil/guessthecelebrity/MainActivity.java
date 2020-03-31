@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void checkIfCorrectBtnOne(View view) {
         if (firstBTN.getText().equals(getCorrectName())) {
-            Toast.makeText(this, "Correct", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Your guessed it right!", Toast.LENGTH_LONG).show();
             index++;
             pointsCounter++;
             checkIfAllItemsAreAnswered();
@@ -75,14 +75,16 @@ public class MainActivity extends AppCompatActivity {
             index++;
             wrongAnswerCounter++;
             checkIfAllItemsAreAnswered();
-            Toast.makeText(this, "Wrong", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,
+                    "You made a mistake! the actor name is " + getCorrectName().toString(),
+                    Toast.LENGTH_SHORT).show();
         }
     }
 
 
     public void checkIfCorrectBtnTwo(View view) {
         if (secondBTN.getText().equals(getCorrectName())) {
-            Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Your guessed it right!", Toast.LENGTH_LONG).show();
             index++;
             pointsCounter++;
             checkIfAllItemsAreAnswered();
@@ -90,13 +92,15 @@ public class MainActivity extends AppCompatActivity {
             index++;
             wrongAnswerCounter++;
             checkIfAllItemsAreAnswered();
-            Toast.makeText(this, "Wrong", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,
+                    "You made a mistake! the actor's name is " + getCorrectName().toString(),
+                    Toast.LENGTH_SHORT).show();
         }
     }
 
     public void checkIfCorrectBtnThree(View view) {
         if (thirdBTN.getText().equals(getCorrectName())) {
-            Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Your guessed it right!", Toast.LENGTH_LONG).show();
             index++;
             pointsCounter++;
             checkIfAllItemsAreAnswered();
@@ -104,13 +108,15 @@ public class MainActivity extends AppCompatActivity {
             index++;
             wrongAnswerCounter++;
             checkIfAllItemsAreAnswered();
-            Toast.makeText(this, "Wrong", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,
+                    "You made a mistake! the actor's name is " + getCorrectName().toString(),
+                    Toast.LENGTH_SHORT).show();
         }
     }
 
     public void checkIfCorrectBtnFour(View view) {
         if (fourthBTN.getText().equals(getCorrectName())) {
-            Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Your guessed it right!", Toast.LENGTH_LONG).show();
             index++;
             pointsCounter++;
             checkIfAllItemsAreAnswered();
@@ -118,7 +124,9 @@ public class MainActivity extends AppCompatActivity {
             index++;
             wrongAnswerCounter++;
             checkIfAllItemsAreAnswered();
-            Toast.makeText(this, "Wrong", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,
+                    "You made a mistake! the actor's name is " + getCorrectName().toString(),
+                    Toast.LENGTH_SHORT).show();
         }
     }
 
