@@ -31,7 +31,7 @@
 
         <Button
             android:id="@+id/first_button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkIfCorrectBtnOne"
             app:layout_constraintBottom_toTopOf="@+id/second_button"
@@ -43,7 +43,7 @@
 
         <Button
             android:id="@+id/second_button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkIfCorrectBtnTwo"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -55,10 +55,10 @@
 
         <Button
             android:id="@+id/third_button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="checkIfCorrectBtnThree"
             android:layout_marginTop="32dp"
+            android:onClick="checkIfCorrectBtnThree"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +66,7 @@
 
         <Button
             android:id="@+id/fourth_button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="checkIfCorrectBtnFour"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -77,5 +77,36 @@
             app:layout_constraintVertical_bias="0.16" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/correct_answer_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginBottom="197dp"
+        android:textStyle="bold"
+        android:text="@string/correct"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/wrong_answer_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mistakes"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="337dp"
+        android:layout_marginBottom="178dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/points" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

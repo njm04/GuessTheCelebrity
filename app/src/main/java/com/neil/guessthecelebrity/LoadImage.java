@@ -19,7 +19,6 @@ public class LoadImage extends AsyncTask<String, Void, Bitmap> {
 
     @Override
     protected Bitmap doInBackground(String... strings) {
-        //System.out.println(strings[0]);
         Bitmap bitmap = null;
         try {
             String url = strings[0];
@@ -33,6 +32,11 @@ public class LoadImage extends AsyncTask<String, Void, Bitmap> {
 
     @Override
     protected void onPostExecute(Bitmap bitmap) {
-        imageView.setImageBitmap(Bitmap.createScaledBitmap(bitmap, 700, 900, true));
+        imageView.setImageBitmap(Bitmap.createScaledBitmap(
+                bitmap,
+                700,
+                900,
+                true)
+        );
     }
 }
